@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/rvanbaalen/claude-cleanup/compare/claude-cleanup-v1.1.0...claude-cleanup-v1.2.0) (2025-08-25)
+
+
+### Features
+
+* update CLI help output with version number and npx usage examples ([1424d46](https://github.com/rvanbaalen/claude-cleanup/commit/1424d46e734613e8a36fc264a9e91c968135dce3))
+
 ## [1.1.0](https://github.com/rvanbaalen/claude-cleanup/compare/claude-cleanup-v1.0.0...claude-cleanup-v1.1.0) (2025-08-25)
 
 
