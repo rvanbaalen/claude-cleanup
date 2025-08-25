@@ -1,0 +1,32 @@
+{
+  "name": "@rvanbaalen/claude-cleanup",
+  "version": "1.0.0",
+  "description": "A utility tool for cleaning up Claude conversation history.",
+  "main": "cleanup_claude_history.js",
+  "bin": {
+    "claude-cleanup": "./cleanup_claude_history.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvanbaalen/claude-cleanup.git"
+  },
+  "keywords": [
+    "claude",
+    "cleanup",
+    "cli",
+    "history"
+  ],
+  "author": "Robin van Baalen",
+  "license": "MIT",
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/rvanbaalen/claude-cleanup/issues"
+  },
+  "homepage": "https://github.com/rvanbaalen/claude-cleanup#readme"
+}
