@@ -1,6 +1,6 @@
 {
   "name": "@rvanbaalen/claude-cleanup",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A utility tool for cleaning up Claude conversation history.",
   "main": "cleanup_claude_history.js",
   "bin": {
