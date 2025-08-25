@@ -1,4 +1,6 @@
-# claude-cleanup
+# Claude Cleanup
+
+_By Claude, for Claude._
 
 A utility tool for cleaning up Claude conversation history.
 
