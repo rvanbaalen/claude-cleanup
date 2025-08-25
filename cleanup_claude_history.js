@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
+const packageJson = require('./package.json');
 
 const CLAUDE_JSON_PATH = path.join(os.homedir(), '.claude.json');
 
@@ -37,9 +38,10 @@ if (args.includes('--pasted-contents-only')) {
 // Help flag
 if (args.includes('--help') || args.includes('-h')) {
   console.log(`
-Claude History Cleaner
+Claude Cleanup v${packageJson.version}
+By Claude, for Claude.
 
-Usage: node cleanup_claude_history.js [options]
+Usage: npx @rvanbaalen/claude-cleanup [options]
 
 Options:
   --max-messages <number>     Maximum number of messages to keep per conversation (default: 5)
@@ -48,10 +50,10 @@ Options:
   --help, -h                  Show this help message
 
 Examples:
-  node cleanup_claude_history.js                       # Keep last 5 messages & remove pastedContents
-  node cleanup_claude_history.js --max-messages 10     # Keep last 10 messages & remove pastedContents
-  node cleanup_claude_history.js --pasted-contents-only # Only remove pastedContents fields
-  node cleanup_claude_history.js --dry-run             # Preview changes without applying them
+  npx @rvanbaalen/claude-cleanup                       # Keep last 5 messages & remove pastedContents
+  npx @rvanbaalen/claude-cleanup --max-messages 10     # Keep last 10 messages & remove pastedContents
+  npx @rvanbaalen/claude-cleanup --pasted-contents-only # Only remove pastedContents fields
+  npx @rvanbaalen/claude-cleanup --dry-run             # Preview changes without applying them
   `);
   process.exit(0);
 }
